@@ -1,0 +1,91 @@
+#Konversi Suhu di Python
+ 
+print("\n---Konversi Suhu di Python---\n")
+print('Celsiun --> Reamur --> Fahrenheit --> Kelvin')
+
+#Celcius
+celcius = float(input('Masukan suhu dalam celsius = '))
+print('Suhu adalah', celcius ,'Celcius')
+
+#Reamur
+reamur = (4/5) * celcius
+print('Suhu dalam reamur adalah', reamur ,'Reamur')
+
+#Fahrenheit
+fahrenheit = ((9/5) * celcius) + 32
+print('Suhu dalam fahrenheit adalah', fahrenheit ,'Fahrenheit')
+
+#Kelvin
+kelvin = celcius + 273
+print('Suhu dalam kelvin adalah', kelvin ,'Kelvin')
+
+print ('----------------------------')
+
+print('Reamur --> Celcius --> Fahrenheit --> Kelvin')
+
+#Reamur
+reamur = float(input('Masukan suhu dalam reamur = '))
+print('Suhu adalah', reamur ,'Reamur')
+
+#Celcius
+celcius = (5/4) * reamur
+print('Suhu dalam celcius adalah', celcius ,'Celcius')
+
+#Fahrenheit
+fahrenheit = ((9/4) * reamur) + 32
+print('Suhu dalam fahrenheit adalah', fahrenheit ,'Fahrenheit')
+
+#Kelvin
+kelvin = ((5/4) * reamur) + 273
+print('Suhu dalam kelvin adalah', kelvin ,'Kelvin')
+
+print ('----------------------------')
+
+print('Fahrenheit --> Celcius --> Reamur --> Kelvin')
+
+#Fahrenheit
+fahrenheit = float(input('Masukan suhu dalam fahrenheit = '))
+print('Suhu adalah', fahrenheit ,'Fahrenheit')
+
+#Celcius
+celcius = ((5/9) * (fahrenheit - 32))
+print('Suhu dalam celcius adalah', celcius ,'Celcius')
+
+#Reamur
+reamur = ((4/9) * (fahrenheit - 32))
+print('Suhu dalam reamur adalah', reamur ,'Reamur')
+
+#Kelvin
+
+###
+# Untuk konversi dari Fahrenheit to Kelvin harus di convert
+# dlu ke dalam Celcius lalu di ubah menjadi Kelvin
+###
+
+kelvin = ((5/9) * (fahrenheit - 32)) + 273
+print('Suhu dalam kelvin adalah', kelvin ,'Kelvin')
+
+print ('----------------------------')
+
+print('Kelvin --> Celcius --> Reamur --> Fahrenheit')
+
+#Kelvin
+kelvin = float(input('Masukan suhu dalam kelvin = '))
+print('Suhu adalah', kelvin ,'Kelvin')
+
+#Celcius
+celcius = (kelvin - 273)
+print('Suhu dalam celcius adalah', celcius ,'Celcius')
+
+#Reamur
+reamur = ((4/5) * (kelvin - 273))
+print('Suhu dalam reamur adalah', reamur ,'Reamur')
+
+#Fahrenheit
+
+###
+# Untuk konversi dari Kelvin to Fahrenheit harus di convert
+# dlu ke dalam Celcius lalu di ubah menjadi Fahrenheit
+###
+fahrenheit = ((9/5)*(kelvin - 273)+32) 
+print('Suhu dalam kelvin adalah', fahrenheit ,'Fahrenheit')
